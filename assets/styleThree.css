@@ -53,6 +53,8 @@ nav{
         height: 100vh;
         width: 100vw;
         position: absolute;
+        z-index: -1;
+      
     }
    
    .sliderWrapper {
@@ -66,3 +68,26 @@ nav{
      transition: all 1.5s ease-in-out;
      color: #ffffff;
    }
+   .main-heading{
+    color: #ffffff;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    padding-bottom: 3%;
+   }
+   .main-form-area{
+    display: flex;
+    position: relative;
+    padding-top: 3%;
+   }
+
+   /*Step one style*/
+   .card-header{
+    background-color: #EEECFC !important;
+    border: none !important;
+
+   }
+   .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: var(--bs-nav-pills-link-active-color);
+    background-image: linear-gradient(#73B2FB, #A2DFFE) !important;
+    }

@@ -14,7 +14,7 @@ function loadFormData(n) {
     ? $("#next_button").text("Submit").removeAttr("onclick")
     : $("#next_button")
         .attr("type", "button")
-        .text("Next")
+        .text("Next Step")
         .attr("onclick", "next()");
 }
 
