@@ -1,0 +1,218 @@
+/***Style For Task One***/
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;400&family=Montserrat:wght@400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+nav{
+  background: #ffffff;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  color: #000;
+  padding: 25px 50px;
+}
+.nav-links {
+    display: flex;
+    justify-content:space-around;
+    width: 50%;
+    text-transform: uppercase;
+}
+.nav-links a{
+  display: block;
+   text-transform: capitalize;
+   text-decoration: none;
+   color: #000;
+  border-bottom:2px solid transparent;
+  transition:0.5s ease;
+  transform: translateX(0%);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.nav-links a:hover{
+  color:#30C9E9;
+}
+.burger{
+  display: none;
+}
+.burger div{
+  width: 25px;
+  height: 3px;
+  background: #000;
+  margin: 5px;
+  transition:all 0.5s ease;
+}
+@media only screen and (max-width: 760px){
+   nav{
+    justify-content: space-between;
+    padding: 0 5vw;
+  }
+  .nav-links{
+    position: absolute;
+    right: 0;
+    top:7vh;
+    min-height:92vh;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    transform: translateX(100%);
+    transition:All 0.5s ease-in;
+    z-index: 2;
+  }
+  .nav-links a{
+    opacity: 0;
+ 
+  }
+  .burger{
+    display: block;
+  }
+ 
+}
+@media only screen and (max-width: 640px){
+  nav{
+    justify-content: space-between;
+    padding: 0 5vw;
+  }
+}
+.nav-active{
+  transform: translateX(0);
+}
+@media only screen and (max-width: 460px){
+  .nav-links{
+    width: 100%;
+    transition:All 0.5s ease;
+    z-index: 2;
+  }
+}
+.nav-active{
+  transform: translateX(0);
+}
+@keyframes navLinkFade{
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.toggle .line1{
+   transform: rotate(-45deg) translate(-5px,6px );
+}
+.toggle .line2{
+   opacity: 0;
+}
+.toggle .line3{
+   transform: rotate(45deg) translate(-5px,-6px );
+}
+
+/**Responsive***/
+
+
+/*Slider*/
+
+.slider {
+   background: #30C9E9;
+   display: block;
+   height: 80vh;
+   width:100%;
+   position: absolute;
+  }
+  
+  .sliderWrapper {
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    transition: all 1.5s ease-in-out;
+    color: #ffffff;
+  }
+  .sliderTitle{
+    font-size: 3.5rem;
+    line-height: 15px;
+    font-weight: 300;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+    
+  }
+  .sliderDesc{
+    font-size: 1rem;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    width: 40%;
+    text-align: center;
+    font-weight: 500;
+  }
+  
+  .sliderButton{
+    padding: 10px 40px;
+    background-color: #FF4431;
+    border: none;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 50px;
+  }
+
+/**Features**/
+.features{
+  background-color: #f5f5f5;
+  display: flex;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 38%;
+}
+.features .features-area{
+  margin-bottom: 32rem;
+}
+.features .card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 18rem;
+  height: 22rem;
+  border: none;
+  border-radius: 0px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  padding: 30px 20px;
+}
+.features .card-img-top{
+  height: 5rem;
+  width: 5rem;
+}
+.features h4{
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+}
+.features .card-text{
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-family: 'Montserrat', sans-serif;
+}
