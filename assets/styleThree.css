@@ -80,7 +80,36 @@ nav{
     position: relative;
     padding-top: 3%;
    }
-
+   .contentInfo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+   }
+   .contentInfo h4{
+    color: #9099AB;
+    font-weight: 400;
+    font-size: 1.2rem;
+   }
+   .contentInfo h1{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #5B7197;
+    text-transform: capitalize;
+   }
+   .contentInfo p{
+    width: 40%;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #9099AB;
+   }
+   .tab h6{
+    font-weight: 400;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #94C7FC;
+   }
    /*Step one style*/
    .card-header{
     background-color: #EEECFC !important;
